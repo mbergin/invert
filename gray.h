@@ -94,7 +94,6 @@ public:
 					reversed_ = true;
 					break;
 				}
-//				std::cout << next_index << " " << std::bitset<5>(gray(next_index)) << " " << count_bits(gray(next_index)) << std::endl;
 				if (count_bits(gray(next_index)) == pick_)
 				{
 					index_ = next_index;
