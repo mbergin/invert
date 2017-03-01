@@ -188,6 +188,10 @@ int main()
 	// * Try the CUDA version of BLAS for matrix multiplication to parallelise further. It depends whether
 	//   the cost of copying between system RAM and GPU RAM is worth the gain in speed.
 	//
+	// * Investigate block inverse, because the matrix naturally splits into 4x4 and 3x3 diagonal blocks
+	//   and these sizes have closed form inverses which might be quicker to compute. One of the four blocks
+	//   remains the same between adjacent combinations so its inverse could be cached.
+	//
 	// * Benchmark different matrix libraries (LAPACK etc).
 
 	return 0;
