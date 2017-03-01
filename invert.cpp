@@ -1,10 +1,10 @@
 #include <iostream>
-#include <Eigen/Dense>
 #include <chrono>
 #include <iomanip>
 #include <bitset>
 #include <array>
 #include <thread>
+#include "eigen/Dense"
 
 #include "gray.h"
 #include "matrix.h"

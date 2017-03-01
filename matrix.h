@@ -1,5 +1,5 @@
 #pragma once
-#include <Eigen/Core>
+#include "eigen/Core"
 
 // A subset of row r from a matrix, selecting columns by the mapping column_map.
 template<int N>
